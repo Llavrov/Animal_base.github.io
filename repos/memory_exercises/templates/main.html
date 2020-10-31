@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link   rel="stylesheet" href="{{ url_for('static', filename='css/for_second_page.css') }}">
+    <title>Registration</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;}
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <span>База данных бездомных животных</span>
+        </div>
+
+    <div class="section">
+
+    <nav class="menu-btn_nav">
+        <a href="/add" class="menu-link">Добавить</a>
+        <a href="/katalog" class="menu-link">Каталог</a>
+        <a href="#" class="menu-link">Поиск</a>
+        <a href="#" class="menu-link">Вопросы</a>
+        <a href="#" class="menu-link">Контакты</a>
+    </nav>
+
+
+        </div>
+    </header>
+
+    <div id="image">
+    <h1> Интересная информация про животных </h1>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('menu-btn').on('click', function(e) {
+        e.preventDefault;
+        $(this).toggleClass('menu-btn_active');
+        });
+    </script>
+
+
+</body>
+</html>
